@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: inherit;
+}
+
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5% !important; //1rem = 10px 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    // width < 1200 ?
+    font-size: 56.25%; //1 rem = 9px, 9/16= 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16= 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1 rem = 12px, 12/16= 50%
+  }
+}
+
+h1,
+p {
+  font-family: "Quicksand", sans-serif !important;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 15px !important;
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif !important;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}

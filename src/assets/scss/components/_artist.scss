@@ -1,0 +1,124 @@
+.data {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 250px;
+  margin-bottom: 40px;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+  &__img {
+    position: relative;
+    @include respond(phone) {
+      display: none;
+    }
+    .options_play {
+      position: absolute;
+      top: 0;
+      color: white;
+      font-size: 83px;
+      width: 250px;
+      height: 250px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      transition: all 0.3s;
+      &:hover {
+        font-size: 100px;
+      }
+    }
+  }
+
+  &__description {
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 0 32px;
+    max-height: 250px;
+  }
+
+  &__header {
+    font-weight: 400px;
+    margin-top: 40px;
+    h1,
+    p {
+      color: white;
+      margin: 0;
+      @include respond(phone) {
+        text-align: center;
+      }
+    }
+
+    h1 {
+      @include respond(phone) {
+        font-size: 25px;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 17.5px;
+      span {
+        color: $color-secondary;
+        margin-left: 16px;
+        font-size: 10px;
+        line-height: 12.5px;
+      }
+    }
+  }
+
+  &__history {
+    margin-bottom: 50px;
+    p {
+      color: white;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20.19px;
+      @include respond(tab-port) {
+        display: none;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__buttons {
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      padding: 7px 23px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .primary {
+      background-color: $color-primary;
+      color: white;
+      margin-right: 20px;
+      border: 1px solid $color-primary;
+      &:hover {
+        background-color: transparent;
+        color: $color-primary;
+      }
+    }
+
+    .secondary {
+      background-color: transparent;
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      &:hover {
+        background-color: $color-primary;
+        color: white;
+      }
+    }
+
+    .options {
+      color: white;
+      margin-left: 20px;
+      cursor: pointer;
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+  }
+}

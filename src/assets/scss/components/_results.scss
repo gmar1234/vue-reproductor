@@ -1,0 +1,76 @@
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 160px));
+  grid-gap: 22px;
+  @include respond(phone) {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  &__item {
+    height: 200px;
+    position: relative;
+    .faplay {
+      color: white;
+      font-size: 32px;
+      left: 70px;
+      top: 60px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .option_tool {
+      cursor: pointer;
+      position: absolute;
+      color: white;
+      top: 8px;
+      right: 8px;
+      z-index: 1;
+    }
+    .options_play {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        .faplay {
+          font-size: 64px;
+        }
+      }
+    }
+    .img {
+      width: 100%;
+      height: 160px;
+      object-fit: fill;
+    }
+    .song {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17.5px;
+      margin: 0;
+      padding-top: 8px;
+    }
+    .artist {
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 400;
+      color: $color-gray;
+      margin: 0;
+    }
+  }
+}
+
+.bloquote {
+  h1 {
+    color: $color-primary;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 27.5px;
+    font-weight: 700;
+    @include no-select;
+  }
+}

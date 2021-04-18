@@ -1,0 +1,17 @@
+@import "base/variables";
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "base/utilities";
+@import "page/base";
+@import "components/results";
+@import "components/artist";
+@import "components/aside";
+@import "components/search";
+@import "components/player";
+
+h1,
+p,
+a {
+  font-family: "Quicksand", sans-serif;
+  @include no-select;
+}

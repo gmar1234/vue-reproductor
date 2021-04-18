@@ -1,0 +1,38 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 580px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==phone-min {
+    @media (max-width: 700px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+@mixin no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

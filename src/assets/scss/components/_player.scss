@@ -1,0 +1,107 @@
+.player {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  &__img {
+    max-height: 100px;
+    img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+  &__control {
+    display: flex;
+  }
+  &__data {
+    color: white;
+    padding: 24px 0 0 20px;
+    flex: 1;
+    h1 {
+      font-size: 14px;
+      line-height: 17.5px;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+    }
+    p {
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  &__type {
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    .back {
+      font-size: 20px;
+      margin-top: 39.2px;
+      cursor: pointer;
+      margin-right: 24.8px;
+      @include respond(phone) {
+        display: none;
+      }
+    }
+    .next {
+      font-size: 20px;
+      cursor: pointer;
+      margin-top: 39.2px;
+      margin-left: 24.8px;
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    .play {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      background-color: $color-lighr-red;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 20.7px;
+      margin-top: 20px;
+    }
+  }
+
+  &__vol {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 32px;
+    color: white;
+    .player-volume {
+      @include respond(phone-min) {
+        display: none;
+      }
+    }
+    .mute {
+      font-size: 18px;
+      margin-top: 40px;
+      margin-right: 40px;
+      cursor: pointer;
+      @include respond(tab-port) {
+        margin-right: 10px;
+      }
+
+      @include respond(phone-min) {
+        display: none;
+      }
+    }
+    .vol {
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 40px;
+      margin-left: 40px;
+      @include respond(tab-port) {
+        margin-left: 10px;
+      }
+    }
+  }
+}

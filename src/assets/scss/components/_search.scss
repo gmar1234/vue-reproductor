@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  &__input {
+    width: 524px;
+    position: relative;
+    input {
+      font-family: "Quicksand", sans-serif;
+      width: 100%;
+      height: 36px;
+      border: 1px solid $color-gray;
+      border-radius: 100px;
+      outline: none;
+      padding: 0 10px;
+    }
+    .fasearch {
+      position: absolute;
+      top: 9px;
+      right: 0;
+      font-size: 18px;
+      color: $color-gray;
+    }
+  }
+
+  &__user {
+    display: flex;
+    @include respond(tab-port) {
+      display: none;
+    }
+    .fauser {
+      color: $color-primary;
+      margin-top: 17px;
+      margin-right: 12px;
+    }
+    .user {
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      @include no-select;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.side {
+  .logo {
+    padding: 50px 40px 30px 40px;
+    img {
+      width: 256px;
+      height: 56px;
+    }
+  }
+  .nav {
+    color: white;
+    &__title {
+      width: 22px;
+      font-weight: 700;
+      line-height: 27.5px;
+      width: 100%;
+      margin: 0 0 0 40px;
+    }
+
+    &__items {
+      padding: 0;
+      li {
+        list-style: none;
+        margin-bottom: 8px;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          padding-left: 40px;
+          transition: all 0.3s;
+          &:hover,
+          &.active {
+            border-left: 5px solid $color-primary;
+            padding-left: 35px;
+            color: $color-primary;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

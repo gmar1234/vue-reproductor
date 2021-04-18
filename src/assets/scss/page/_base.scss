@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "aside content"
+    "player player";
+  grid-template-columns: 330px 1fr;
+  grid-template-rows: 1fr 100px;
+
+  @include respond(tab-port) {
+    grid-template-areas:
+      "content"
+      "player";
+    grid-template-columns: 1fr;
+  }
+  .side {
+    grid-area: aside;
+    background-color: $color-secondary;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  .content {
+    grid-area: content;
+    background-color: white;
+    padding: 30px 40px;
+    overflow: auto;
+  }
+
+  .player {
+    grid-area: player;
+    background-color: #eb5757;
+  }
+}

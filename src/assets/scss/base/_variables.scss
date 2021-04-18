@@ -1,0 +1,72 @@
+$color-primary: #e86060;
+$color-secondary: #662323;
+
+$color-warnnig: #ff8a00;
+$color-success: #28b485;
+$color-text-s: #8798ad;
+$color-white: #ffffff;
+$color-black: #000;
+$color-primary-2: #f7f008;
+$color-primary-dark: #2b3044;
+
+// Body
+$body-bg: #f6f9fd;
+$bg-general: #e6ecff;
+$line-color: darken(#f6f9fd, 2%);
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #ff003d;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$card-color: #d9dde3;
+$accent: #c6d0da;
+$color-text: #7c7c7c;
+$color-text-black: black;
+$color-dark: #2c2929;
+
+$color-warnnig-ligth: #fcba40;
+// Define our color variables
+$color-coral: #f45d4c;
+$color-orange: #ff8a00;
+$color-green: #28b485;
+$color-red: #ff003d;
+$color-lighr-red: #ff7676;
+$color-yellow: #fcba40;
+$color-blue: #1877f2;
+$color-teal: #60b99a;
+$color-purple: #5b527f;
+$color-gray-soft: #bdbdbd;
+$color-gray: #828282;
+$color-black: #000000;
+$color-white: #ffffff;
+
+// Create our map
+$theme-colors: (
+  coral: $color-coral,
+  orange: $color-orange,
+  yellow: $color-yellow,
+  green: $color-green,
+  dark: $color-primary-dark,
+  red: $color-red,
+  teal: $color-teal,
+  blue: $color-blue,
+  purple: $color-purple,
+  gray: $color-gray,
+  gray-soft: $color-gray-soft,
+  black: $color-black,
+  white: $color-white,
+);
+
+$font: "Roboto", sans-serif;
+$font-icon: "Material Icons Outlined";
+$font-base: 62.5%;
+$alpha: 0.5;
+$shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+$shadow-hover: 0px 4px 15px rgba(0, 0, 0, 0.07);
