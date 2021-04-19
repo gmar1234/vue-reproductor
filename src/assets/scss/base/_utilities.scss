@@ -398,17 +398,6 @@ SISTEMA DE GRID
 .text-c-primary {
   color: $color-primary;
 }
-// %type-base {
-//     color: #fff;
-//     font-family: "Lato", sans-serif;
-//     font-weight: 300;
-// }
-
-// body {
-//     @extend %type-base;
-//     background: #333;
-//     margin: 0 auto;
-// }
 
 .text-d-none {
   text-decoration: none !important;
@@ -455,4 +444,21 @@ SISTEMA DE GRID
   @include respond(tab-port) {
     display: none;
   }
+}
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.spinner {
+  display: inline-flex;
+  animation: round 2s linear infinite;
 }

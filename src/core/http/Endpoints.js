@@ -8,12 +8,12 @@ const {
 
 const endpoints = {
   
-  getArtist: ({
-      artist
+  getListItem: ({
+      value,
+      type
     }) => ({ 
-      url: BaseURL+`/search?q=track:${artist}"&output=jsonp`
+      url: BaseURL+`/search?q=${type}:${value}"&output=jsonp`
     }),
-     
   };
   
   export {

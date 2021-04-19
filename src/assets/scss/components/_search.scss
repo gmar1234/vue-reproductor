@@ -5,6 +5,9 @@
   &__input {
     width: 524px;
     position: relative;
+    @include respond(tab-port) {
+      width: 97%;
+    }
     input {
       font-family: "Quicksand", sans-serif;
       width: 100%;

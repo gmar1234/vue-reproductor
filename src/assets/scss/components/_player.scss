@@ -20,12 +20,24 @@
       line-height: 17.5px;
       font-weight: 700;
       margin: 0 0 8px 0;
+      @include respond(phone) {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 50px;
+      }
     }
     p {
       font-size: 12px;
       line-height: 15px;
       font-weight: 400;
       margin: 0;
+      @include respond(phone) {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 50px;
+      }
     }
   }
 

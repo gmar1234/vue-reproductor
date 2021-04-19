@@ -4,7 +4,7 @@ import Vue from 'vue';
 import App from './App.vue';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPlay,faEllipsisV,faSearch,faUser ,faEllipsisH,faPause,faStepBackward,faStepForward,faVolumeUp,faVolumeMute,faVolumeDown} from '@fortawesome/free-solid-svg-icons'
+import { faPlay,faEllipsisV,faSearch,faUser ,faEllipsisH,faPause,faStepBackward,faStepForward,faVolumeUp,faVolumeMute,faVolumeDown,faCircleNotch} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 Vue.config.productionTip = false;
@@ -21,6 +21,7 @@ library.add(faStepBackward);
 library.add(faStepForward); 
 library.add(faVolumeUp); 
 library.add(faVolumeMute); 
+library.add(faCircleNotch); 
 library.add(faVolumeDown); 
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);

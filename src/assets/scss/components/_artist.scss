@@ -63,12 +63,19 @@
         margin-left: 16px;
         font-size: 10px;
         line-height: 12.5px;
+        @include respond(phone) {
+          margin-top: 10px;
+          display: block;
+        }
       }
     }
   }
 
   &__history {
     margin-bottom: 50px;
+    @include respond(phone) {
+      margin-bottom: 15px;
+    }
     p {
       color: white;
       font-size: 12px;
@@ -85,6 +92,9 @@
       display: flex;
       justify-content: center;
     }
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
     a {
       padding: 7px 23px;
       border-radius: 100px;
@@ -100,6 +110,11 @@
         background-color: transparent;
         color: $color-primary;
       }
+      @include respond(phone) {
+        margin-right: 0px;
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .secondary {
@@ -109,6 +124,13 @@
       &:hover {
         background-color: $color-primary;
         color: white;
+      }
+
+      @include respond(phone) {
+        margin-top: 10px;
+        margin-right: 0px;
+        width: 100%;
+        text-align: center;
       }
     }
 
